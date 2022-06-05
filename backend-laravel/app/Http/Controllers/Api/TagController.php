@@ -25,10 +25,16 @@ class TagController extends ApiController
      */
     public function index()
     {
+<<<<<<< HEAD
         //$tags = Tag::all()->pluck('name');
 
         $tagsCount = DB::table('article_tag')->join('tags', 'article_tag.tag_id', '=', 'tags.id')->select(array('tags.name', DB::raw('COUNT(tag_id) as countTags')))->groupBy('tags.name')->get();
 
         return $this->respondWithTransformer($tagsCount);
+=======
+        $tags = Tag::all()->pluck('name');
+
+        return $this->respondWithTransformer($tags);
+>>>>>>> master
     }
 }
