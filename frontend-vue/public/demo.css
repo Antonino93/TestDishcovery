@@ -1,0 +1,10 @@
+.rounded-tag {
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+    background-color: #fff;
+    color: green;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0.2em;
+}
